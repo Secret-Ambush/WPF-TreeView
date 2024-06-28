@@ -139,7 +139,7 @@ namespace WPFTreeView
         }
         #endregion
 
-
+        #region Helpers
         public static string GetFileFolderName(string path)
         {
             if (string.IsNullOrEmpty(path))
@@ -156,6 +156,8 @@ namespace WPFTreeView
             //Return name after last backslash
             return path.Substring(lastIndex + 1);
         }
+
+        #endregion
     }
 }
 
